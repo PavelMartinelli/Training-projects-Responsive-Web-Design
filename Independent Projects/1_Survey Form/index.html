@@ -2,9 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>FilmMaker survey form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <h1 id="title">FilmMaker community survey form</h1>
+    <p id="description"> Help us make our "Film Makers" content
+        better</p>
+    <form id="survey-form" class="main">
+        <fieldset>
+            <label for="name">What can we call you?<input id="name"
+                                                          type="text"
+                                                          placeholder="Enter your name" required>
+            </label>
+            <label for="number">How old are you?<input id="number"
+                                                       type="number"
+                                                       min="16"
+                                                       max="120"
+                                                       placeholder="Age" required>
+            </label>
+            <label for="email" >Your Email<input id="email"
+                                                type="email"
+                                                placeholder="Don't worry, we won't send spam" required>
+            </label>
+            <label for="dropdown">What connects you to cinema? <select required id="dropdown">
+                    <option disabled selected value>Select your role</option>
+                    <option value="role1">I'm just a movie viewer</option>
+                    <option value="role2">I am an amateur/beginner at making movies</option>
+                    <option value="role3">I work professionally in cinema</option>
+                    <option value="role4">I am a professional film critic</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommend FilmMaker to a friend?</legend>
+            <label for="yes"><input id="yes"
+                                    type="radio"
+                                    name="friends"
+                                    class="inline" checked /> Yes
+            </label>
+            <label for="maybe"><input id="maybe"
+                                      type="radio"
+                                      name="friends"
+                                      class="inline" /> Maybe
+            </label>
+            <label for="no"><input id="no"
+                                   type="radio"
+                                   name="friends"
+                                   class="inline" /> No
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>How do you rate our content in general?</legend>
+            <label for="0"><input id="0"
+                                    type="radio"
+                                    name="rate"
+                                    checked /> 0
+            </label>
+            <label for="1"><input id="1"
+                                      type="radio"
+                                      name="rate"/> 1
+            </label>
+            <label for="2"><input id="2"
+                                   type="radio"
+                                   name="rate"/> 2
+            </label>
+            <label for="3"><input id="3"
+                                  type="radio"
+                                  name="rate"/> 3
+            </label>
+            <label for="4"><input id="4"
+                                  type="radio"
+                                  name="rate"/> 4
+            </label>
+            <label for="5"><input id="5"
+                                  type="radio"
+                                  name="rate"/> 5
+            </label>
+        </fieldset>
+        <fieldset>
+            <!--Поменять описание на нормальное c вариантами то какой контент в сообществе вам нравится--!>
+            <label for="dropdown2">What content do you like the most on FilmMaker<select required id="dropdown2">
+                <option disabled selected value>Select the best content for you</option>
+                <option value="role1">I'm just a movie viewer</option>
+                <option value="role2">I am an amateur/beginner at making movies</option>
+                <option value="role3">I work professionally in cinema</option>
+                <option value="role4">I am a professional film critic</option>
+            </select>
+            </label>
+            <p class="check">What kind of movies do you like?</p>
+            <label for="horror">
+                <input class="inline"
+                       id="horror"
+                       type="checkbox"
+                       value="horror"/> Horror
+            </label>
+            <label for="comedy">
+                <input class="inline"
+                       id="comedy"
+                       type="checkbox"
+                       value="comedy"/> Comedy
+            </label>
+            <!-- Продолжить список до минимум 8 --!>
+        </fieldset>
+        <input id="submit"
+               type="submit"
+               value="Submit" />
+    </form>
 </body>
 </html>
