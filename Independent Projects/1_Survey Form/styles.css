@@ -4,3 +4,12 @@ label{
 .check{
     margin: 0.5em  0;
 }
+input,
+select,
+textarea{
+    display: block;
+}
+
+.inline{
+    display: inline;
+}
