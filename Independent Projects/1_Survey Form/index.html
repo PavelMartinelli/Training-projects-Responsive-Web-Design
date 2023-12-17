@@ -11,17 +11,17 @@
         better</p>
     <form id="survey-form" class="main">
         <fieldset>
-            <label for="name">What can we call you?<input id="name"
+            <label for="name" id="name-label">What can we call you?<input id="name"
                                                           type="text"
                                                           placeholder="Enter your name" required>
             </label>
-            <label for="number">How old are you?<input id="number"
+            <label for="number" id="number-label">How old are you?<input id="number"
                                                        type="number"
                                                        min="16"
                                                        max="120"
                                                        placeholder="Age" required>
             </label>
-            <label for="email" >Your Email<input id="email"
+            <label for="email" id="email-label" >Your Email<input id="email"
                                                 type="email"
                                                 placeholder="Don't worry, we won't send spam" required>
             </label>
@@ -39,16 +39,19 @@
             <label for="yes"><input id="yes"
                                     type="radio"
                                     name="friends"
-                                    class="inline" checked /> Yes
+                                    class="inline"
+                                    value="yes" checked /> Yes
             </label>
             <label for="maybe"><input id="maybe"
                                       type="radio"
                                       name="friends"
-                                      class="inline" /> Maybe
+                                      value="maybe"
+                                      class="inline"/> Maybe
             </label>
             <label for="no"><input id="no"
                                    type="radio"
                                    name="friends"
+                                   value="no"
                                    class="inline" /> No
             </label>
         </fieldset>
@@ -57,31 +60,36 @@
             <label for="0" class="inline"><input id="0"
                                     type="radio"
                                     name="rate" class="inline"
+                                                 value="0"
                                     checked /> 0
             </label>
             <label for="1" class="inline"><input id="1"
                                       type="radio"
-                                      name="rate" class="inline"/> 1
+                                      name="rate" class="inline"
+                                                 value="1"/> 1
             </label>
             <label for="2" class="inline"><input id="2"
                                    type="radio"
-                                   name="rate" class="inline"/> 2
+                                   name="rate" class="inline"
+                                                 value="2"/> 2
             </label>
             <label for="3" class="inline"><input id="3"
                                   type="radio"
-                                  name="rate" class="inline"/> 3
+                                  name="rate" class="inline"
+                                                 value="3"/> 3
             </label>
             <label for="4" class="inline"><input id="4"
                                   type="radio"
-                                  name="rate" class="inline"/> 4
+                                  name="rate" class="inline"
+                                                 value="4"/> 4
             </label>
             <label for="5" class="inline"><input id="5"
                                   type="radio"
-                                  name="rate" class="inline"/> 5
+                                  name="rate" class="inline"
+                                                 value="5"/> 5
             </label>
         </fieldset>
         <fieldset>
-            <!--Поменять описание на нормальное c вариантами то какой контент в сообществе вам нравится--!>
             <label for="dropdown2">What content do you like the most on FilmMaker<select required id="dropdown2">
                 <option disabled selected value>Select the best content for you</option>
                 <option value="content1">Movie reviews, notes on new movies</option>
